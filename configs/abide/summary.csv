@@ -1,0 +1,6 @@
+atlas,model,n_seeds,gpu,auc_mean,auc_std,acc_mean,acc_std,sen_mean,sen_std,spe_mean,spe_std
+AAL116,edgequadd,5,A30,70.25,2.07,64.76,3.25,61.02,4.64,68.15,4.66
+harvard48,edgequadd,5,A30,68.8,4.28,63.01,3.93,58.37,12.61,67.22,8.99
+kmeans100,edgequadd,5,"mixed (A30 MIG, H100 MIG, V100)",47.67,4.79,50.20,4.73,5.71,12.78,90.55,20.61
+schaefer100,edgequadd,5,H100,71.57,4.04,65.83,3.58,62.86,6.4,68.52,3.14
+ward100,edgequadd,5,RTX 3090,50.59,2.34,51.26,2.88,18.57,26.00,80.93,27.79

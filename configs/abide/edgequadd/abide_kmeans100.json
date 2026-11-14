@@ -1,0 +1,36 @@
+{
+  "model": "edgequadd",
+  "dataset": "abide_kmeans100",
+  "hp": {
+    "layers": 2,
+    "dropout": 0.7000000000000001,
+    "droppath": 0.1,
+    "cluster_num": 4,
+    "activation": "elu",
+    "rank": 4,
+    "quad_lr_mult": 1.0,
+    "alpha_init": 1.0,
+    "encoder_hidden": 64,
+    "use_layer_norm": false,
+    "quadratic_aspp_rates": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "frontend": "none"
+  },
+  "train": {
+    "lr": 0.005815571035293543,
+    "weight_decay": 0.006272159632302996,
+    "batch_size": 16,
+    "epochs": 200,
+    "optimizer": "adamw",
+    "schedule": "cosine",
+    "grad_clip": 1.0,
+    "warmup_epochs": 0,
+    "lr_final_ratio": 0.1,
+    "mixup": "none",
+    "selection": "val_auc"
+  }
+}

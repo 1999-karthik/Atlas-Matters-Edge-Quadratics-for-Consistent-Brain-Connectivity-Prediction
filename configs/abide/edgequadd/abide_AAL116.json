@@ -1,0 +1,37 @@
+{
+  "model": "edgequadd",
+  "dataset": "abide_AAL116",
+  "hp": {
+    "layers": 2,
+    "dropout": 0.8,
+    "droppath": 0.0,
+    "cluster_num": 4,
+    "activation": "relu",
+    "rank": 1,
+    "encoder_hidden": 16,
+    "use_layer_norm": false,
+    "quadratic_aspp_rates": [
+      1,
+      3,
+      6
+    ],
+    "frontend": "aspp",
+    "cnncorr_aspp_rates": [
+      1,
+      2,
+      4
+    ]
+  },
+  "train": {
+    "lr": 2.629810416152585e-06,
+    "weight_decay": 4.785703414649243e-06,
+    "batch_size": 8,
+    "epochs": 300,
+    "optimizer": "adamw",
+    "schedule": "cosine",
+    "grad_clip": 5.0,
+    "warmup_epochs": 0,
+    "lr_final_ratio": 0.5,
+    "mixup": "none"
+  }
+}

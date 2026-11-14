@@ -1,0 +1,13 @@
+# Versions of the environment the benchmark was developed and tested in (Python 3.10).
+# The CUDA 12.8 build of torch 2.9 has no kernels for Pascal GPUs (P100): exclude those nodes on SLURM.
+torch==2.9.1
+torch-geometric==2.7.0
+numpy==2.2.6
+scipy==1.13.1
+scikit-learn==1.7.2
+pandas==2.3.3
+omegaconf==2.4.0
+optuna==4.9.0
+python-louvain==0.16
+networkx==3.4.2
+matplotlib==3.10.9

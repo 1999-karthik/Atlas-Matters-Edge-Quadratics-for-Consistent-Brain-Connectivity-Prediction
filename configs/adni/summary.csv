@@ -1,0 +1,6 @@
+atlas,model,n_seeds,auc_mean,auc_std,acc_mean,acc_std,sen_mean,sen_std,spe_mean,spe_std
+AAL116,edgequadd,5,85.1,9.66,77.93,7.94,71.67,29.23,82.35,16.11
+harvard48,edgequadd,5,85.39,1.94,75.17,8.93,66.67,21.25,81.18,23.31
+kmeans100,edgequadd,5,44.8,8.6,53.1,8.66,16.67,17.68,78.82,23.01
+schaefer100,edgequadd,5,90.69,5.13,77.24,10.79,75.0,21.25,78.83,18.88
+ward100,edgequadd,5,50.59,9.14,53.10,7.94,45.00,36.13,58.82,23.89

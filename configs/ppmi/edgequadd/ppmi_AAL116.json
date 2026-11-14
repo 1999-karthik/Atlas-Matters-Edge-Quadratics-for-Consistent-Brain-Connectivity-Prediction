@@ -1,0 +1,35 @@
+{
+  "model": "edgequadd",
+  "dataset": "ppmi_AAL116",
+  "hp": {
+    "layers": 5,
+    "dropout": 0.30000000000000004,
+    "droppath": 0.3,
+    "cluster_num": 2,
+    "activation": "leaky_relu",
+    "rank": 2,
+    "quad_lr_mult": 4.0,
+    "alpha_init": 1.0,
+    "encoder_hidden": 32,
+    "use_layer_norm": false,
+    "quadratic_aspp_rates": [
+      1,
+      2,
+      4
+    ],
+    "frontend": "none"
+  },
+  "train": {
+    "lr": 0.0008192243701774203,
+    "weight_decay": 1.2780021789738372e-07,
+    "batch_size": 128,
+    "epochs": 300,
+    "optimizer": "adam",
+    "schedule": "cosine",
+    "grad_clip": 1.0,
+    "warmup_epochs": 0,
+    "lr_final_ratio": 1.0,
+    "mixup": "hard",
+    "selection": "val_auc"
+  }
+}

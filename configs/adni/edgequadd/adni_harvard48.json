@@ -1,0 +1,40 @@
+{
+  "model": "edgequadd",
+  "dataset": "adni_harvard48",
+  "hp": {
+    "layers": 3,
+    "dropout": 0.30000000000000004,
+    "droppath": 0.05,
+    "cluster_num": 16,
+    "activation": "elu",
+    "rank": 4,
+    "quad_lr_mult": 4.0,
+    "alpha_init": 0.5,
+    "encoder_hidden": 128,
+    "use_layer_norm": true,
+    "quadratic_aspp_rates": [
+      1,
+      3,
+      6
+    ],
+    "frontend": "aspp",
+    "cnncorr_aspp_rates": [
+      1,
+      2,
+      4
+    ]
+  },
+  "train": {
+    "lr": 0.006061692001353896,
+    "weight_decay": 0.02408199015919056,
+    "batch_size": 8,
+    "epochs": 300,
+    "optimizer": "adamw",
+    "schedule": "warmup_cosine",
+    "grad_clip": 0.0,
+    "warmup_epochs": 5,
+    "lr_final_ratio": 0.1,
+    "mixup": "hard",
+    "selection": "val_loss"
+  }
+}
